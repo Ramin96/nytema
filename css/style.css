@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,500');
+
+body {
+  font-family: 'Raleway', 'Roboto', 'Droid', "Times New Roman", 'Times, serif';
+  color: #555;
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.blog-post p,
+.front-page-content p {
+  text-align: justify;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+
+/*
+ * Masthead for nav
+ */
+
+.blog-masthead {
+  background-color: #428bca;
+  -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+          box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+}
+
+/* Nav links */
+.blog-nav-item {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 500;
+  color: #cdddeb;
+}
+.blog-nav-item:hover,
+.blog-nav-item:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Active state gets a caret at the bottom */
+.blog-nav .active {
+  color: #fff;
+
+}
+.blog-nav .active:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  vertical-align: middle;
+  content: " ";
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid;
+  border-left: 5px solid transparent;
+}
+
+
+/*
+ * Blog name and description
+ */
+
+.blog-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.blog-title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: normal;
+}
+.blog-description {
+  font-size: 20px;
+  color: #999;
+}
+
+
+/* Pagination */
+.pager {
+  margin-bottom: 60px;
+  text-align: left;
+}
+.pager > li > a {
+  width: 140px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+
+
+.blog-post {
+  margin-bottom: 60px;
+}
+.blog-post-title {
+  margin-bottom: 5px;
+  font-size: 40px;
+}
+.blog-post-meta {
+  margin-bottom: 20px;
+  color: #999;
+}
+
+
+/*
+ * Footer
+ */
+
+.blog-footer {
+  padding: 40px 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+
+/*custom style
+
+*/
+.showcase{
+  height: 600px;
+  padding: : 100px 20px;
+  text-align: center;
+  border-bottom: #ccc 1px solid
+  margin-bottom 30px;
+  color: #fff;
+  background: url('../image/showcase.png') no-repeat center center
+}
+.showcase h1, .showcase h2{
+  font-size 55px;
+  padding-bottom: 20px;
+  padding-top: 50px;
+  color:#fff;
+}
+.showcase p {
+  font-size: 20px;
+  margin-bottom: 50px;
+  
+}
+.boxes {
+  text-align: center;
+  background: #fff;
+  margin-bottom: 30px;
+  background: url(../image/background.jpeg) no-repeat center center
+ }
+.box .fa {
+  font-size: 45px !important;
+  margin-bottom: 10px;
+}
+.box {
+  padding: 15px;
+  border: #ccc 1px solid;
+  margin-top: 30px;
+}
+.blog-nav a {
+  color: #fff;
+}
+.blog-nav a:hover {
+  color:#666;
+}
+
+
+.brand {
+        display: inherit;
+        margin: 0;
+        padding: 30px 0 10px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 5em;
+        font-weight: 700;
+        line-height: normal;
+        color:white; ;
+        background-color: dimgrey;
+
+
+    }
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 25%;
+}
+h2.blog-post-title {
+    margin-top: 1cm;
+}
+
+.entry-title {
+    font-size: 1.25rem;
+    margin-top: 1cm;
+}
+.Archive2{
+  margin-top: 1cm;
+  font-size: 1.25rem;
+}
+
+.col-md-4 {
+    margin-top: 1cm;
+}
+.b, strong {
+    font-weight: bolder;
+    color: black;
+}
+
+.blog-footer{
+  min-height: 60px;
+  margin-top: 30px;
+  padding-top: 15px;
+  background-color: black;
+  text-align: center;
+
+}
