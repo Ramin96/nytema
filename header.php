@@ -42,9 +42,7 @@
               'walker'      => new bootstrap_4_walker_nav_menu()
             ) );
           ?>
-            <form>
-              <input type="text" name="search" placeholder="Search..">
-            </form>
+            <?php get_search_form(); ?>
         </div>
       </nav>
     </div>

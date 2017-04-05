@@ -2,10 +2,16 @@
 
 // Register Custom Navigation Walker
 require_once("wp-bootstrap-navwalker.php");
+require_once("includes/filters.php");
+
+
+
+
  function nytema_setup(){
  	register_nav_menus(array(
  		'primary'=>__('Primary Menus')
  		));
+
 
  	wp_enqueue_style('bootstrap4', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css', array(), '4.0.0-alpha.6', 'all');
 
@@ -21,14 +27,7 @@ require_once("wp-bootstrap-navwalker.php");
  add_action('after_setup_theme', 'nytema_setup' );
 
 
- function set_excerpt_length(){
- 	return 40;
- }
- add_filter('excerpt_length','set_excerpt_length'); 
- function nytema_excerpt_more($more){
- 	return '<br /><a class="read-more" href="%1$s">Read more >></a>';
- }
- add_filter('excerpt_more', 'nytema_excerpt_more');
+
 
  
  
@@ -40,7 +39,7 @@ function arphabet_widgets_init() {
 
 	register_sidebar( array(
 		'name'          => 'sidebar',
-		'id'            => 'sidebar-widgets',
+		'id'            => 'sidebar-1',
 		'before_widget' => '<div class="side-widgets">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h2 class="rounded">',
@@ -48,6 +47,7 @@ function arphabet_widgets_init() {
 	) );
 
 }
+
 
 
 add_action( 'widgets_init', 'arphabet_widgets_init' );

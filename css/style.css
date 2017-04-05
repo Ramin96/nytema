@@ -12,9 +12,11 @@ img {
 }
 
 .blog-post p,
-.front-page-content p {
-  text-align: justify;
+.front-page-content p,
+.md-text-block p {
+    text-align: justify;
 }
+
 
 h1, .h1,
 h2, .h2,
@@ -156,7 +158,8 @@ h6, .h6 {
   border-bottom: #ccc 1px solid
   margin-bottom 30px;
   color: #fff;
-  background: url('../image/showcase.png') no-repeat center center
+  background: url('../image/showcase.png') no-repeat center center;
+  background-size: cover;
 }
 .showcase h1, .showcase h2{
   font-size 55px;
@@ -208,24 +211,7 @@ h6, .h6 {
 
     }
 
-input[type=text] {
-    width: 130px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: white;
-    background-image: url('searchicon.png');
-    background-position: 10px 10px; 
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-}
 
-input[type=text]:focus {
-    width: 25%;
-}
 h2.blog-post-title {
     margin-top: 1cm;
 }
