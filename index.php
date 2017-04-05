@@ -28,15 +28,14 @@
 
             <?php } ?>
 
-          </div><!-- /.blog-main -->
-          <div class="col-md-3">
-          
-            <?php 
-              get_sidebar(); 
-             ?>
-         </div><!-- /.blog-sidebar -->
-       </div><!-- /.row -->
-    </div><!-- /.container -->
+      </div><!-- /.blog-main -->
+        <div class="col-md-3">
+          <?php 
+            get_sidebar(); 
+           ?>
+        </div><!-- /.blog-sidebar -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
 
 
 

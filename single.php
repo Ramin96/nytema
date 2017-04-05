@@ -1,15 +1,12 @@
-<?php get_header();
-
- ?>
-
+<?php get_header();?>
   <div class="container">
     <div class="row">
       <div class="col-md-9 blog-post">
           
-<?php 
-  if(have_posts()) : 
-    while (have_Posts())
-       : the_post(); ?>
+      <?php 
+      if(have_posts()) : 
+        while (have_Posts())
+          : the_post(); ?>
           
   <div class="blog-post">
     <h2 class="blog-post-title">
@@ -20,22 +17,18 @@
       <?php the_content(); ?>
 
   </div><!-- /.blog-post -->
-
     <?php endwhile; ?>
       <?php else : ?>
-
     <p> <?php __('No posts Found'); ?></p>
-
       <?php endif; ?>
-            <!--sidebar-->
-              
+            <!--sidebar-->       
       </div><!-- /.blog-post -->
         <div class="col-md-3">
           <?php 
             get_sidebar(); 
          ?>
         </div><!-- /.blog-sidebar -->
-     </div><!-- /.row -->
+    </div><!-- /.row -->
   </div><!-- /.container -->
 
 

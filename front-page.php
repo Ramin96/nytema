@@ -4,7 +4,7 @@
    <div class="container">
     <h1>Välkommen till Spa & Massage</h1>
       <p>hej jag heter ramin rajy </p>
-      <a class="btn btn-primary btn-lg" href="http://localhost/inlamningsuppgift/about-2/">Read More</a>
+      <a class="btn btn-primary btn-lg" href="raminrajy.se/inlamningsuppgift/about-2/">Read More</a>
     </div>  
   </section>
   
@@ -19,9 +19,9 @@
           <hr>
         </div><!--col-lg-12-->
         <?php 
-            if(have_posts()) : 
-              while (have_Posts())
-               : the_post(); ?>
+          if(have_posts()) {
+            while (have_posts()) {
+             the_post(); ?>
         <div class="row">
           <div class="col-md-6">
             <?php the_post_thumbnail('front-image', array('class' => 'img-responsive img-border-left')); ?>
@@ -42,12 +42,10 @@
         </p>
       </div><!--box-->
     </div><!--row-->
-                 <?php endwhile; ?>
-        
-               <?php else : ?>
+      <?php } ?>
+        <?php } else { ?>
+       <p><?php _e('No posts Found'); ?></p>
 
-                 <p> <?php __('No posts Found'); ?></p>
-
-               <?php endif; ?>
+        <?php } ?>
   </div> <!--container-->      
   <?php get_footer(); ?>

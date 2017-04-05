@@ -20,29 +20,27 @@
   <body>
 
   <div class="brand">Spa & Massage</div>
-  
- 
     <div class="blog-masthead">
       <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
-      <div class="container">
+        <div class="container">
           <a class="navbar-brand" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
-          <?php
-            wp_nav_menu( array(
-              'theme_location'  => 'primary',
-              'container'     => 'div',
-              'container_class' => 'collapse navbar-collapse',
-              'container_id'      => 'navbarCollapse',
-              'menu_class'    => 'nav navbar-nav',
-              'fallback_cb'   => '__return_false',
-              'items_wrap'    => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-              'depth'       => 2,
-              'walker'      => new bootstrap_4_walker_nav_menu()
-            ) );
-          ?>
-            <?php get_search_form(); ?>
+            <?php
+              wp_nav_menu( array(
+                'theme_location'  => 'primary',
+                'container'     => 'div',
+                'container_class' => 'collapse navbar-collapse',
+                'container_id'      => 'navbarCollapse',
+                'menu_class'    => 'nav navbar-nav',
+                'fallback_cb'   => '__return_false',
+                'items_wrap'    => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                'depth'       => 2,
+                'walker'      => new bootstrap_4_walker_nav_menu()
+              ) );
+            ?>
+              <?php get_search_form(); ?>
         </div>
       </nav>
     </div>

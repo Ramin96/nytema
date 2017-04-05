@@ -60,8 +60,8 @@ if ( function_exists( 'add_theme_support' ) ) {
     // additional image sizes
     // delete the next line if you do not need additional image sizes
     add_image_size( 'category-thumb', 300, 9999 ); // 300 pixels wide (and unlimited height)
-    add_image_size( 'featured-image', 700, 9999 ); // 700 pixels wide (and unlimited height)
-    add_image_size( 'front-image', 400, 9999 ); // 400 pixels wide (and unlimited height)
+    add_image_size( 'featured-image', 900, 9999, true ); // 700 pixels wide (and unlimited height)
+    add_image_size( 'front-image', 600, 9999 ); // 400 pixels wide (and unlimited height)
  }
 
 

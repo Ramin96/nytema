@@ -11,27 +11,22 @@
       while (have_Posts())
        : the_post(); ?>
           
-            <div class="page-content">
-              <h2 class="page-title">
+        <div class="page-content">
+          <h2 class="page-title">
                 <?php the_title(); ?>
-              </h2>
+          </h2>
               <?php the_post_thumbnail('featured-image'); ?>
               <?php the_content(); ?>
-            </div><!-- /.page-content -->
+        </div><!-- /.page-content -->
+          <?php endwhile; ?>
+          <?php else : ?>
 
-              <?php endwhile; ?>
-            <?php else : ?>
-
-            <p> <?php __('No pages Found'); ?></p>
-
-            <?php endif; ?>
-            <!--sidebar-->
-              
-
-
-          </div><!-- /.page -->
-       </div><!-- /.row -->
-    </div><!-- /.container -->
+          <p> <?php __('No pages Found'); ?></p>
+          <?php endif; ?>
+            
+      </div><!-- /.page -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
 
 
 
