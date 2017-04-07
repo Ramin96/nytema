@@ -19,7 +19,7 @@
 
   <body>
 
-  <div class="brand">Spa & Massage</div>
+  <div class="brand" >Spa & Massage</div>
     <div class="blog-masthead">
       <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">

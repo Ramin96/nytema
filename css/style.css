@@ -165,7 +165,7 @@ h6, .h6 {
   font-size 55px;
   padding-bottom: 20px;
   padding-top: 50px;
-  color:#909592;
+  color:#ffffff;
 }
 .showcase p {
   font-size: 20px;
@@ -206,13 +206,13 @@ h6, .h6 {
         font-weight: 700;
         line-height: normal;
         color:white; ;
-        background-color: dimgrey;
+        background-color: #949592;
 
 
     }
 
 
-h2.blog-post-title {
+h2.blog-post-title, .rounded{
     margin-top: 1cm;
 }
 
@@ -243,3 +243,57 @@ h2.blog-post-title {
 img.attachment-featured-image.size-featured-image.wp-post-image {
     width: 780px;
 }
+
+a.tag-link-77.tag-link-position-1,
+a.tag-link-79.tag-link-position-2,
+a.tag-link-78.tag-link-position-3,
+a.tag-link-80.tag-link-position-4{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: block;
+  margin-left: 4em;
+}
+a.tag-link-80.tag-link-position-4 {
+    margin-bottom: 1.5em;
+}
+
+
+
+h2.rounded {
+    font-size: 1.55em;
+    margin-bottom:0.75em; 
+  }
+
+
+.side-widgets{
+  border-bottom: 1px solid;
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+  margin-left: 0;
+  margin-right: 0;
+
+}
+
+a.read-more.btn.btn-primary {
+    margin-top: 1rem;
+}
+
+
+
+
+p.captain {
+
+  padding: 35px;
+  word-wrap: break-word;
+  font-size: 60px;
+  font-family: "Dancing Script",cursive;
+  color: #fff;
+  line-height: 130px;
+  text-transform: none !important;
+  text-shadow: 0 0 10px rgba(60, 50, 19, 0.7)
+}
+
+
+
+
+
+

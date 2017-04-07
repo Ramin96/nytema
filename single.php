@@ -13,7 +13,7 @@
       <?php the_title(); ?>
     </h2>
       <?php the_post_thumbnail('featured-image'); ?>
-      <p class="blog-post-meta">Mars 30, 2017 by <a href="#">Mark</a></p>
+      <p class="blog-post-meta">April 7, 2017 by Ramin</p>
       <?php the_content(); ?>
 
   </div><!-- /.blog-post -->
